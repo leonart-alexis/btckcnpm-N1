@@ -12,19 +12,41 @@
         <img width="" src="./Ảnh chụp màn hình 2024-03-12 111411.png" alt="">  
     </header>
     <nav>
-<div class="container">
-    <ul>
-        <li><a href=""><img style="width: 150px" src="./Ảnh chụp màn hình 2024-03-12 112444.png" alt=""></a></li>
-        <li><a href="">Hà Nội<i class="fa-solid fa-sort-down"></i></a></li>
-        <li><input type="text" placeholder="bạn tìm gì..." ><i class="fa-solid fa-magnifying-glass"></i></li>
-        <li><a href=""><button><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</button></a></li>
-        <li><a href="">Lịch sử <br> đơn hàng</a></li>
-        <li><a href=""><span class="btn-content"><span class="btn-top"></span></span>Mua thẻ nạp ngay!</a></li>
-        <li><a href="">24h công nghệ</a></li>
-        <li><a href="">Hỏi đáp</a></li>
-        <li><a href="">Game app</a></li>
-    </ul>
-</div>
+        <div class="container">
+            <ul>
+                <li><a href=""><img style="width: 150px" src="./Ảnh chụp màn hình 2024-03-12 112444.png" alt=""></a></li>
+                <li id="adress-form"><a href="#">Địa chỉ<i class="fa-solid fa-sort-down"></i></a></li>
+                <li><input type="text" placeholder="bạn tìm gì..." ><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><a href=""><button><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</button></a></li>
+                <li><a href="">Lịch sử <br> đơn hàng</a></li>
+                <li><a href=""><span class="btn-content"><span class="btn-top"></span></span>Mua thẻ nạp ngay!</a></li>
+                <li><a href="">24h công nghệ</a></li>
+                <li><a href="">Hỏi đáp</a></li>
+                <li><a href="">Game app</a></li>
+            </ul>
+            <div class="adress-form">
+                <div class="adress-form-content">
+                    <h2>Chọn địa chỉ nhận hàng <span id="adress-close">X Đóng</span></h2>
+                    <form action="">
+                        <p>Chọn đầy đủ địa chỉ nhận hàng để biết chính xác thời gian giao</p>
+                        <select name="" id="">
+                            <option value="#">--Chọn địa chỉ</option>
+                            <option valua="#"></option>
+                        </select>
+                        <select name="" id="">
+                            <option value="#">--Chọn Quận\Huyện</option>
+                            <option valua="#"></option>
+                        </select>
+                        <select name="" id="">
+                            <option value="#">--Chọn Phường\Xã</option>
+                            <option valua="#"></option>
+                        </select>
+                        <input type="text" placeholder="Số nhà, Tên đường">
+                        <button>Xác nhận</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </nav>
     <section class="menu-bar">
         <div class="container">
@@ -32,17 +54,37 @@
                 <ul>
                     <li><a href=""><i class="fa-solid fa-mobile"></i>Điện thoại</a></li>
                     <li><a href=""><i class="fa-solid fa-laptop"></i>Máy tính</a></li>
-                    <li><a href=""><i class="fa-solid fa-tablet"></i>Tablet</a></li>
-                    <li><a href=""></a></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><a href=""><i class="fa-duotone fa-tablet"></i></i>Tablet</a></li>
+                    <li><a href=""><i class="fa-solid fa-headphones"></i>Phụ kiện<i style="margin-left: 6px;" class="fa-solid fa-sort-down"></i></a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="">Phụ kiện</li>
+                                <li><a href="">Phụ kiện</li>
+                                <li><a href="">Phụ kiện</li>
+                                <li><a href="">Phụ kiện</li>
+                                <li><a href="">Phụ kiện</li>
+                                <li><a href="">Phụ kiện</li>
+                                <li><a href="">Phụ kiện</li>
+                                <li><a href="">Phụ kiện</li>
+                                <li><a href="">Phụ kiện</li>
+                                <li><a href="">Phụ kiện</li>
+                                <li><a href="">Phụ kiện</li>
+                                <li><a href="">Phụ kiện</li>
+                                <li><a href="">Phụ kiện</li>
+                                <li><a href="">Phụ kiện</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">Đồng hồ thông minh</a></li>
+                    <li><a href="">Đồng hồ thời trang</a></li>
+                    <li><a href="">Máy in</a></li>
+                    <li><a href="">Máy cũ giá rẻ</a></li>
+                    <li><a href="">Sim, thẻ cào</a></li>
+                    <li><a href="">Trả góp, điện nước</a></li>
                 </ul>
             </div>
         </div>
     </section>
+<script src="./script.js"></script>
 </body>
 </html>
