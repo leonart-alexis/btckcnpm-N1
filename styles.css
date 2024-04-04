@@ -319,7 +319,6 @@ li{
     text-align:center;
     cursor:pointer;
     padding:6px 0;
-    height:100px;
     line-height:38px;
     position:relative;
 }
@@ -396,6 +395,7 @@ li{
 .slider-content-left-top-container{
     position:relative;
     overflow:hidden;
+    border-bottom:2px solid #ddd;
 }
 .slider-content-left-top-container:hover i{
     opacity:1;
@@ -411,7 +411,7 @@ li{
 }
 .slider-content-left-bottom li{
     border-top:4px solid #FFF;
-    border-bottom:4px solid #FFF;
+    border-bottom:2px solid #FFF;
 }
 /*-----------banner 1-------------------*/
 .baner-one {
