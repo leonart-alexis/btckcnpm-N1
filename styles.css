@@ -524,6 +524,7 @@ li{
 .slider-product-one-content-items:nth-child(3) {
     transform: translateX(200%);
 }
+
 /*-----------------------fix lỗi 01---------------------*/
 .slider-content-left {
     width: 70%;
