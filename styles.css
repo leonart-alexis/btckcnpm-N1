@@ -686,7 +686,7 @@ li{
 .product-gallery-two-content-left-bottom {
     background-color:#fff;
     display: flex;
-    flex-wrap:wrap;
+    overflow:auto;
     border-radius: 5px;
     position: relative;
     height: 400px;
