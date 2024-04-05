@@ -548,27 +548,21 @@ li{
 }
 /*----------------product-gallery---------------*/
 .product-gallery-one-content-product {
-    display: grid;
-    grid-template-columns: repeat(4,minmax(0,1fr));
+    display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .product-gallery-one-content-product-item {
-    width: 80%;
-    padding: 10px 12px 12px;
+    width: 20%;
+    padding: 50px 12px 12px;
     border: 1px solid #eceaea;
     cursor: pointer;
-    margin: 5px;
-}
-.thub{
-    width: 2px;
-    height: 250px;
 }
 .product-gallery-one-content-product-item:hover {
     box-shadow: 3px 3px 5px #ecebeb;
 }
 .product-gallery-one-content-product-item:hover > img {
-    transform: translateY(-10px);
-
+    transform: translateY(-20px);
 }
 .product-gallery-one-content-product-item > img {
     width: 100%;
@@ -576,24 +570,19 @@ li{
 }
 .product-gallery-one-content-product-item-text {
     padding-top: 20px;
-    text-align: center;
 }
 .product-gallery-one-content-product-item-text li {
     margin-bottom: 6px;
-    color: #F00;
-    font-size: 20px;
 }
 .product-gallery-one-content-product-item-text li:first-child {
     height: 30px;
-    width: 100%;
+    width: 70%;
+    background-color: #DE1C05;
     display: inline-block;
-    margin-bottom: 10px;
-    line-height: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    line-height: 30px;
     border-radius: 40px;
-    color: #1e7100;
-    font-family: "barlow", sans-serif;
-    font-weight: bold;
-    font-size: 17px;
 }
 .product-gallery-one-content-product-item-text li:first-child p {
     color: #fff;
@@ -628,19 +617,23 @@ li{
     margin-bottom: 20px;
 }
 .product-gallery-one-content-title h2 {
-    color: rgb(0, 178, 20);
-    border-bottom: 2px solid rgb(0, 178, 20);
+    color: #333;
 }
-.product-gallery-one-content-title li {
+.product-gallery-one-content-title ul li a {
     color: #333;
     font-size: 12px;
     transition: all 0.3s ease;
 }
-.product-gallery-one-content-title li {
+.product-gallery-one-content-title ul {
+    display: flex;
+}
+.product-gallery-one-content-title ul li {
     padding: 6px 12px;
     border: 1px solid #ddd;
     margin-left: 12px;
     border-radius: 40px;
+}.product-gallery-one-content-title ul li:hover a {
+    color: tomato;
 }
 
 /*-------------produc-gallery-two---*/
@@ -693,6 +686,7 @@ li{
 .product-gallery-two-content-left-bottom {
     background-color:#fff;
     display: flex;
+    flex-wrap:wrap;
     border-radius: 5px;
     position: relative;
     height: 400px;
