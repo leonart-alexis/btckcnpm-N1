@@ -7,7 +7,6 @@
 ul{
     list-style: none;
 }
-
 a{
     text-decoration: none;
 }
@@ -16,13 +15,47 @@ a{
     margin: auto;
 }
 header{
-    background-color: #fee800;
+    background-color: #00B214;
     text-align: center;
-    height: 31px;
+    height: 45px;
+}
+header ul{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.hotline{
+    float: left;
+    padding-top: 15px;
+}
+.add-top{
+    float: right;
+    padding-top: 10px;
+}
+.dndk{
+    border-right: 1px solid hsla(0, 0%, 100%, .4);
+    height: .8125rem;
+}
+header ul li:nth-child(4) button{
+    height: 30px;
+    padding: 0 12px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+header ul li:nth-child(4) button i{
+    margin-right: 6px;
+}
+header ul li:nth-child(4) button:hover{
+    background-color: #a7a5a5;
 }
 /* ------------------------nav------------------------ */
 nav{
-    background-color: black;
+    background-color: #ffffff;
+    height:150px;
 }
 nav ul{
     display: flex;
@@ -51,6 +84,7 @@ nav ul li:nth-child(3) input{
     border: none;
     padding-left: 6px;
     outline: none;
+    border: 1px solid #00B214;
 }
 nav ul li:nth-child(3) i{
     position: absolute;
@@ -59,31 +93,6 @@ nav ul li:nth-child(3) i{
     color: #333;
     line-height: 30px;
     cursor: pointer;
-}
-nav ul li:nth-child(4) button{
-    height: 30px;
-    padding: 0 12px;
-    cursor: pointer;
-    background-color: transparent;
-    color: white;
-    border: 1px solid #a7a5a5;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-nav ul li:nth-child(4) button i{
-    margin-right: 6px;
-}
-nav ul li:nth-child(4) button:hover{
-    background-color: #a7a5a5;
-}
-nav ul li:nth-child(5){
-    text-align: center;
-}
-nav ul li:nth-child(5):hover a{
-    color: #fff200;
-}
-nav ul li:nth-child(6) a{
-    color: #fff200;
 }
 .btn-content{
     position: relative;
@@ -259,12 +268,10 @@ nav ul li:nth-child(9):hover a{
     top: 100%;
     padding: 12px;
     display: none;
-    
 }
 .submenu ul{
     display: flex;
     flex-direction: column;  
-    
 }
 .submenu ul li{
     padding: 6px 0;
