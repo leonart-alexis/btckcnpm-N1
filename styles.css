@@ -55,7 +55,7 @@ header ul li:nth-child(4) button:hover{
 /* ------------------------nav------------------------ */
 nav{
     background-color: #ffffff;
-    height:100px;
+    height:120px;
 }
 nav ul{
     display: flex;
