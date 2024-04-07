@@ -1,12 +1,23 @@
-const adressbtn = document.querySelector('#adress-form')
-const adressclose = document.querySelector('#adress-close')
-
-
-adressbtn.addEventListener("click", function(){
-    document.querySelector('.adress-form').style.display = "flex"
+const taotaikhoan = document.querySelector('#taotaikhoan')
+console.log(taotaikhoan)
+taotaikhoan.addEventListener("click", function(){
+    document.querySelector('.taotaikhoan') .style.display = "flex"
 })
-adressclose.addEventListener("click", function(){
-    document.querySelector('.adress-form') .style.display = "none"
+const taotaikhoanclose = document.querySelector('#taotaikhoan-close')
+
+taotaikhoanclose.addEventListener("click", function(){
+    document.querySelector('.taotaikhoan') .style.display = "none"
+})
+/*--------------------------------------------------------------*/
+const dangnhap = document.querySelector('#dangnhap')
+console.log(dangnhap)
+dangnhap.addEventListener("click", function(){
+    document.querySelector('.dangnhap') .style.display = "flex"
+})
+const dangnhapclose = document.querySelector('#dangnhap-close')
+
+dangnhapclose.addEventListener("click", function(){
+    document.querySelector('.dangnhap') .style.display = "none"
 })
 // slider------------------------------------------------------
 const rightbtn = document.querySelector('.fa-chevron-right')
