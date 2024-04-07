@@ -554,21 +554,112 @@ li{
     height: 540px;
 }
 /*----------------product-gallery---------------*/
-.product-gallery-one-content-product {
+#section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.product-gallery-one{
+    padding: 30px 0;
+    position: relative;
+    min-height: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-box-align: center;
+}
+.section-bg{
+    opacity: 1;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+    overflow: hidden;
+}
+.section-content{
+    position: relative !important;
+    z-index: 1;
+    width: 100%;
+}
+.row{
+    max-width: 1170px;
+    width: 100%;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section .col{
+    padding-bottom: 0;
+}
+.col{
+    max-width: 100%;
+    flex-basis: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0 15px 30px;
+    width: 100%;
+}
+.col:first-child .product-gallery-one-content{
+    margin-left: auto;
+    margin-right: 0;
+}
+.product-gallery-one-content {
+    position: relative;
+    width: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-flex: 1;
+}
+.product-gallery-one-content-product{
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
+    max-width: 1162.5px;
     display: grid;
     grid-template-columns: repeat(4,minmax(0,1fr));
     justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
 }
 .product-gallery-one-content-product-item {
-    width: 80%;
-    padding: 10px 12px 12px;
-    border: 1px solid #eceaea;
-    cursor: pointer;
-    margin: 5px;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    background: white;
+    margin-bottom: 20px;
+    transition: opacity .3s,transform .3s,background-color .3s,-webkit-transform .3s;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
 }
 .thub{
-    width: 2px;
+    position: relative;
     height: 230px;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: opacity .3s,transform .3s,background-color .3s,-webkit-transform .3s;
+    padding-top: 5%;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .product-gallery-one-content-product-item:hover {
     box-shadow: 3px 3px 5px #ecebeb;
@@ -584,6 +675,11 @@ li{
 .product-gallery-one-content-product-item-text {
     padding-top: 20px;
     text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    font-size: .9em;
+    transition: opacity .3s,transform .3s,background-color .3s,-webkit-transform .3s;
 }
 .product-gallery-one-content-product-item-text li {
     margin-bottom: 6px;
@@ -630,9 +726,14 @@ li{
     margin-top: 30px;
 }
 .product-gallery-one-content-title {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1170px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .product-gallery-one-content-title h2 {
     color: rgb(0, 178, 20);
@@ -648,6 +749,33 @@ li{
     border: 1px solid #ddd;
     margin-left: 12px;
     border-radius: 40px;
+}
+.col-1{
+    padding-bottom: 0;
+    position: relative;
+    margin: 0;
+    width: 90%;
+}
+.product-gallery-one-content-product>.col-1{
+    padding: 0 1px 19.6px;
+    margin-bottom: 0;
+    max-width: 100%;
+    flex-basis: 25%;
+}
+.col-1:first-child .col-inner{
+    margin-left: auto;
+    margin-right: 0;
+}
+.col-inner{
+    position: relative;
+    width: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-flex: 1;
+    flex: 1 0 auto;
+    box-sizing: border-box;
+    border-bottom: 0.1px solid #a7a5a5;
 }
 /*-------------produc-gallery-two---*/
 .product-gallery-two{
