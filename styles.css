@@ -815,7 +815,7 @@ li{
 .product-gallery-two-content-left-bottom-item > img {
     width:130%;
     transition: all 0.5s ease;
-    
+    height:95px;
 }
 .product-gallery-two-content-left-bottom-item-text{
     margin-bottom: 6px;
