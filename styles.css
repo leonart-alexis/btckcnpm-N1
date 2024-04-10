@@ -225,9 +225,10 @@ nav ul li:nth-child(2) button i{
 }
 .menu-bar ul{
     display: flex;
-    justify-content: space-between;
 }
 .menu-bar-content  ul  li{
+    float: left;
+    margin-right: 20px;
     padding: 15px 6px;
     transition: all 0.3s ease;
     width: auto;
