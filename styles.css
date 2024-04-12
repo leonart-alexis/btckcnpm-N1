@@ -4,9 +4,6 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-ul{
-    list-style: none;
-}
 a{
     text-decoration: none;
 }
@@ -275,9 +272,6 @@ nav ul li:nth-child(2) button i{
     display: block;
 }
 /* ------------------------slider------------------ */
-li{
-    list-style:none;
-}
 .slider{
     padding:20px 0;
     height:350px;
@@ -755,4 +749,97 @@ li{
     border-radius: 5px ;
     transition: all 0.3s ease;
     cursor: pointer;
+}
+/*-------footer----->*/
+.mentor{
+    background-image:url("/caynoithat.png");
+}
+.cuocsongxanh{
+    
+    padding-left:100px;
+    box-sizing:border-box;
+}
+h3.cuocsongxanh{
+    text-indent:20px ;
+}
+.grid_column-2-4{
+    padding-left:-100px;   
+    width:20%;
+}
+.grid{
+    padding-left:32px;
+    width:1500px;
+    max-width:100%;
+    margin:0 auto;
+}
+.grid_row{
+    display:flex;
+    flex-wrap:wrap;
+}
+.footer{
+    background-color: rgb(131, 243, 183);
+    padding-top:35px;
+    border-top:4px solid var(--primary-color);
+}
+.footer_heading{
+    font-family:auto;
+    font-size:0.94rem;
+    text-transform:uppercase;
+    color: var(--text-color);
+}
+.footer-list{
+    padding-left:0;
+    list-style:none;
+}
+.footer-item_link{
+    font-family:sans-serif;
+    text-decoration:none;
+    font-size:0.74rem;
+    color:#737373;
+    padding:2px 0;
+    display:block;
+}
+.footer-item_link:hover{
+    color:var(--primary-color);
+}
+.footer-item_icon{
+    font-size:1.6rem;
+    margin-top: -1px 8px 0 0;
+}
+.footer_download{
+    display:flex;
+}
+.footer-download_qr{
+    width:80px;
+    height:80px;
+    border: 1px solid var(--border-color);
+}
+.footer_download-apps{
+    flex:1;
+    margin-left:16px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.footer-download-app-img{
+    height:16px;
+}
+.footer_download-app-link{
+    color:transparent;
+    text-decoration:none;
+}
+.footer_bottom{
+    padding:8px 0;
+    background-color: rgb(51, 194, 118);
+    margin-top:36px;
+}
+.footer_text{
+    margin:0;
+    text-align:center;
+    font-size:1.2rem;
+    color:#efe4e4;
+}
+.border1{
+    padding-bottom:40px;
+    border-bottom: 7px solid rgb(95, 228, 157);
 }
