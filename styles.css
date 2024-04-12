@@ -1,3 +1,6 @@
+ul,li{
+    list-style-type:none;
+}
 *{
     margin:0;
     padding:0;
@@ -842,4 +845,7 @@ h3.cuocsongxanh{
 .border1{
     padding-bottom:40px;
     border-bottom: 7px solid rgb(95, 228, 157);
+}
+.abc li{
+    list-style-type:disc;
 }
