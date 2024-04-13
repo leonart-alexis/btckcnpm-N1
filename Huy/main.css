@@ -4,10 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-li{
-    list-style: none;
-}
-ul{
+ul li{
     list-style: none;
 }
 a{
@@ -16,6 +13,15 @@ a{
 .container{
     max-width: 1200px;
     margin: auto;
+}
+body{
+    width: 100%;
+    position: fixed;
+}
+.main{
+    height: 71vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 header{
     background-color: #00B214;
@@ -38,6 +44,9 @@ header ul{
 .dndk{
     border-right: 1px solid hsla(0, 0%, 100%, .4);
     height: .8125rem;
+}
+header ul li a{
+    color: white;
 }
 header ul li:nth-child(4) button{
     height: 30px;
@@ -188,13 +197,15 @@ nav{
     background-color: #ffffff;
     height:120px;
 }
-nav ul{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+.logo{
+    float: left;
 }
-nav ul li, a{
-    color: white;
+.search{
+    float: right;
+    margin-top: 40px;
+}
+nav ul li a{
+    color: black;
     font-size: 12px;
 }
 nav ul li:nth-child(2){
@@ -222,15 +233,48 @@ nav ul li:nth-child(2) button{
 nav ul li:nth-child(2) button i{
     color: #ffffff;
 }
+.search:hover .search-list{
+    display: block;
+}
+.search-list{
+    z-index: 99;
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px #00B214;
+    display: none;
+    overflow: hidden;
+}
+.search-list-item{
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+.list-item{
+    height: 38px;
+    padding: 0 12px;
+}
+.list-item:hover{
+    background-color: #fafafa;
+}
+.list-item a{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 38px;
+}
 /* ------------------menu-bar--------------------------------- */
 .menu-bar{
     background-color: #3DAA12;
 }
 .menu-bar ul{
     display: flex;
-    justify-content: space-between;
 }
 .menu-bar-content  ul  li{
+    float: left;
+    margin-right: 20px;
     padding: 15px 6px;
     transition: all 0.3s ease;
     width: auto;
@@ -245,36 +289,6 @@ nav ul li:nth-child(2) button i{
 }
 .menu-bar ul li:hover{
     background-color: white;
-}
-/* -------------------submenu------------------------- */
-.menu-bar-content ul li{
-    position: relative;
-}
-.submenu{
-    position: absolute;
-    background-color: #ddd;
-    width: 300px;
-    height: auto;
-    left: 0;
-    top: 100%;
-    padding: 12px;
-    display: none;
-}
-.submenu ul{
-    display: flex;
-    flex-direction: column;
-}
-.submenu ul li{
-    padding: 6px 0;
-}
-.submenu ul li:hover a{
-    color: blue;
-}
-.submenu ul li:hover{
-    background: none;
-}
-.menu-bar-content ul li:hover .submenu{
-    display: block;
 }
 /*-----------------------------chinh-------------------*/
 body {
