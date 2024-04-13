@@ -45,9 +45,6 @@ header ul{
     border-right: 1px solid hsla(0, 0%, 100%, .4);
     height: .8125rem;
 }
-header ul li a{
-    color: white;
-}
 header ul li:nth-child(4) button{
     height: 30px;
     padding: 0 12px;
