@@ -769,6 +769,8 @@ nav ul li:nth-child(2) button i{
     transition: all 0.3s ease;
     cursor: pointer;
 }
+.product-gallery-two-content-left-bottom-item-text
+{color:black;}
 /*-------footer----->*/
 .mentor{
     background-image:url("/caynoithat.png");
