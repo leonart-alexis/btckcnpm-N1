@@ -270,22 +270,21 @@ nav ul li:nth-child(2) button i{
 .menu-bar ul{
     display: flex;
 }
-.menu-bar-content  ul  li{
+.menu-bar-content ul a li{
     float: left;
-    margin-right: 20px;
-    padding: 15px 6px;
+    margin: 15px;
     transition: all 0.3s ease;
     width: auto;
 }
-.menu-bar ul li a{
+.menu-bar ul a li{
     color: black;
     font-size: 16px;
 }
-.menu-bar ul li a i{
+.menu-bar ul a li i{
     margin-right: 6px;
     font-size: 16px;
 }
-.menu-bar ul li:hover{
+.menu-bar ul a:hover{
     background-color: white;
 }
 /* ------------------------slider------------------ */
