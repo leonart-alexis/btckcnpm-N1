@@ -1,759 +1,430 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>plant shop</title>
-    <link rel="stylesheet" href="./styles.css" >
-    <link rel="stylesheet" href="./main.css" />
-    <link rel="stylesheet" href="./sidebar.css" />
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="./sidebar_card.js"></script>
-    <script src="https://kit.fontawesome.com/38cd021484.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="hotline"><i class="fa-solid fa-phone"></i> Hotline: **********</div>
-            <div class="add-top">
-                  <ul>
-                    <li id="taotaikhoan" style="padding-right: 10px;"><a href="./dang-ky.html">TẠO TÀI KHOẢN</a></li>
-                    <li class="dndk"></li>
-                    <li id="dangnhap" style="padding-left: 10px;"><a href="./dang-nhap.html">ĐĂNG NHẬP</a></li>
-                    <li style="padding-left: 10px;"><button type="button" class="cart-shopping"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</button></li>
+
+
+<html
+  lang="en"
+  class="light-style layout-menu-fixed layout-compact"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="assets/"
+  data-template="horizontal-menu-template"
+>
+  <!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-admin-template/html/horizontal-menu-template/app-kanban.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Apr 2024 04:45:04 GMT -->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Btckcnpm</title>
+
+    <meta
+      name="description"
+    />
+    <meta
+      name="keywords"
+      content="dashboard, bootstrap 5 dashboard, bootstrap 5 design, bootstrap 5"
+    />
+    <!-- Canonical SEO -->
+    <link
+      rel="canonical"
+      href="https://themeselection.com/item/sneat-dashboard-pro-bootstrap/"
+    />
+
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/favicon/favicon.ico"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/vendor/css/rtl/core.css"
+      class="template-customizer-core-css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/css/rtl/theme-default.css"
+      class="template-customizer-theme-css"
+    />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/typeahead-js/typeahead.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/jkanban/jkanban.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/select2/select2.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/flatpickr/flatpickr.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/quill/typography.css"
+    />
+    <link rel="stylesheet" href="assets/vendor/libs/quill/katex.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/quill/editor.css" />
+
+    <!-- Page CSS -->
+
+    <link
+      rel="stylesheet"
+      href="assets/vendor/css/pages/app-kanban.css"
+    />
+
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="assets/vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+    
+  </head>
+
+  <body>
+    <style>
+      .template-customizer-open-btn{
+        display: none !important;
+      }
+
+    </style>
+    <!-- ?PROD Only: Google Tag Manager (noscript) (Default ThemeSelection: GTM-5DDHKGP, PixInvent: GTM-5J3LMKC) -->
+   
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Layout wrapper -->
+    <div
+      class="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu"
+    >
+      <div class="layout-container">
+        <!-- Navbar -->
+
+        <nav
+          class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme"
+          id="layout-navbar"
+        >
+          <div class="container-xxl">
+            <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4">
+              <a href="#" class="app-brand-link gap-2">
+                <span class="app-brand-logo demo">
+                  <svg
+                    width="25"
+                    viewBox="0 0 25 42"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <defs>
+                      <path
+                        d="M13.7918663,0.358365126 L3.39788168,7.44174259 C0.566865006,9.69408886 -0.379795268,12.4788597 0.557900856,15.7960551 C0.68998853,16.2305145 1.09562888,17.7872135 3.12357076,19.2293357 C3.8146334,19.7207684 5.32369333,20.3834223 7.65075054,21.2172976 L7.59773219,21.2525164 L2.63468769,24.5493413 C0.445452254,26.3002124 0.0884951797,28.5083815 1.56381646,31.1738486 C2.83770406,32.8170431 5.20850219,33.2640127 7.09180128,32.5391577 C8.347334,32.0559211 11.4559176,30.0011079 16.4175519,26.3747182 C18.0338572,24.4997857 18.6973423,22.4544883 18.4080071,20.2388261 C17.963753,17.5346866 16.1776345,15.5799961 13.0496516,14.3747546 L10.9194936,13.4715819 L18.6192054,7.984237 L13.7918663,0.358365126 Z"
+                        id="path-1"
+                      ></path>
+                      <path
+                        d="M5.47320593,6.00457225 C4.05321814,8.216144 4.36334763,10.0722806 6.40359441,11.5729822 C8.61520715,12.571656 10.0999176,13.2171421 10.8577257,13.5094407 L15.5088241,14.433041 L18.6192054,7.984237 C15.5364148,3.11535317 13.9273018,0.573395879 13.7918663,0.358365126 C13.5790555,0.511491653 10.8061687,2.3935607 5.47320593,6.00457225 Z"
+                        id="path-3"
+                      ></path>
+                      <path
+                        d="M7.50063644,21.2294429 L12.3234468,23.3159332 C14.1688022,24.7579751 14.397098,26.4880487 13.008334,28.506154 C11.6195701,30.5242593 10.3099883,31.790241 9.07958868,32.3040991 C5.78142938,33.4346997 4.13234973,34 4.13234973,34 C4.13234973,34 2.75489982,33.0538207 2.37032616e-14,31.1614621 C-0.55822714,27.8186216 -0.55822714,26.0572515 -4.05231404e-15,25.8773518 C0.83734071,25.6075023 2.77988457,22.8248993 3.3049379,22.52991 C3.65497346,22.3332504 5.05353963,21.8997614 7.50063644,21.2294429 Z"
+                        id="path-4"
+                      ></path>
+                      <path
+                        d="M20.6,7.13333333 L25.6,13.8 C26.2627417,14.6836556 26.0836556,15.9372583 25.2,16.6 C24.8538077,16.8596443 24.4327404,17 24,17 L14,17 C12.8954305,17 12,16.1045695 12,15 C12,14.5672596 12.1403557,14.1461923 12.4,13.8 L17.4,7.13333333 C18.0627417,6.24967773 19.3163444,6.07059163 20.2,6.73333333 C20.3516113,6.84704183 20.4862915,6.981722 20.6,7.13333333 Z"
+                        id="path-5"
+                      ></path>
+                    </defs>
+                    <g
+                      id="g-app-brand"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                     
+                    </g>
+                  </svg>
+                </span>
+                <span class="app-brand-text demo menu-text fw-bold">Btckcnpm</span>
+              </a>
+
+              <a
+                href="javascript:void(0);"
+                class="layout-menu-toggle menu-link text-large ms-auto d-xl-none"
+              >
+                <i class="bx bx-chevron-left bx-sm align-middle"></i>
+              </a>
+            </div>
+
+            <div
+              class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none"
+            >
+              <a
+                class="nav-item nav-link px-0 me-xl-4"
+                href="javascript:void(0)"
+              >
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+
+            <div
+              class="navbar-nav-right d-flex align-items-center"
+              id="navbar-collapse"
+            >
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                  <li style="cursor: pointer;" id="admin-logout" href="./login.html">Logout</li>
+              </ul>
+            </div>
+
+            <!-- Search Small Screens -->
+            <div
+              class="navbar-search-wrapper search-input-wrapper container-xxl d-none"
+            >
+              <input
+                type="text"
+                class="form-control search-input border-0"
+                placeholder="Search..."
+                aria-label="Search..."
+              />
+              <i class="bx bx-x bx-sm search-toggler cursor-pointer"></i>
+            </div>
+          </div>
+        </nav>
+
+        <!-- / Navbar -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Menu -->
+            <aside
+              id="layout-menu"
+              class="layout-menu-horizontal menu-horizontal menu bg-menu-theme flex-grow-0"
+            >
+              <div class="container-xxl d-flex h-100">
+                <ul class="menu-inner">
+                  <!-- Dashboards -->
+                  <li class="menu-item">
+                    <a href="javascript:void(0)" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                      <div data-i18n="Dashboards">Quản lí đơn hàng</div>
+                    </a>
+                    <!-- <ul class="menu-sub">
+                      <li class="menu-item">
+                        <a href="dashboards-analytics.html" class="menu-link">
+                          <i
+                            class="menu-icon tf-icons bx bx-pie-chart-alt-2"
+                          ></i>
+                          <div data-i18n="Analytics">Analytics</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="dashboards-crm.html" class="menu-link">
+                          <i class="menu-icon tf-icons bx bx-shape-circle"></i>
+                          <div data-i18n="CRM">CRM</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          href="app-ecommerce-dashboard.html"
+                          class="menu-link"
+                        >
+                          <i class="menu-icon tf-icons bx bx-cart-alt"></i>
+                          <div data-i18n="eCommerce">eCommerce</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          href="app-logistics-dashboard.html"
+                          class="menu-link"
+                        >
+                          <i class="menu-icon tf-icons bx bx-car"></i>
+                          <div data-i18n="Logistics">Logistics</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="app-academy-dashboard.html" class="menu-link">
+                          <i class="menu-icon tf-icons bx bx-book-open"></i>
+                          <div data-i18n="Academy">Academy</div>
+                        </a>
+                      </li>
+                    </ul> -->
+                  </li>
+
+                  <!-- Layouts -->
+                  <li class="menu-item" id="save-admin">
+                    <button class="btn btn-outline-primary">
+                      Lưu
+                  </button>
+                  </li>
+                 
+
                 </ul>
-                <div class="taotaikhoan">
-                    <div class="taotaikhoan-content">
-                        <h2>TẠO TÀI KHOẢN <span id="taotaikhoan-close">X Đóng</span></h2>
-                        <form action="">
-                            <div><input type="text" placeholder="Email/Số điện thoại"></div>
-                            <div><input type="text" placeholder="Mật khẩu"></div>
-                            <div><input type="text" placeholder="Nhập lại mật khẩu"></div>
-                            <button type="submit">ĐĂNG KÝ</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="dangnhap">
-                    <div class="dangnhap-content">
-                        <h2>ĐĂNG NHẬP <span id="dangnhap-close">X Đóng</span></h2>
-                        <form action="">
-                            <div><input type="text" placeholder="Email/Số điện thoại"></div>
-                            <div><input type="text" placeholder="Mật khẩu"></div>
-                            <button type="submit">ĐĂNG NHẬP</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <nav>
-        <div class="container">
-            <ul>
-                <li class="logo"><a href=""><img style="width: 150px" src="./Ảnh chụp màn hình 2024-04-06 143410.png" alt=""></a></li>
-                <li class="search">
-                    <input class="search-input" type="text" placeholder="Bạn tìm gì..." > 
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <div class="search-list">
-                        <ul class="search-list-item">
-                            <a href="#noithat"><li class="list-item">Cây cảnh nội thất</li></a>
-                            <a href="#vanphong"><li class="list-item">Cây cảnh văn phòng</li></a>
-                            <a href="#deban"><li class="list-item">Cây cảnh để bàn</li></a>
-                            <a href="#giamgia"><li class="list-item">Giảm giá chào hè</li></a>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <section class="menu-bar">
-        <div class="container">
-            <div class="menu-bar-content">
-                <ul>
-                    <a href="#home"><li><i class="fa-solid fa-house"></i>Trang chủ</li></a>
-                    <a href="./Huy/index(sp4).html"><li>Bán chạy nhất</li></a>
-                    <a href="./Luong/index3.html"><li>Mới nhất</li></a>
-                    <a href="./index(sp21).html"><li>Tham khảo thông tin cây</li></a>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- -----------------------------SLider-------------------------- -->
-    <div class="main">    
-        <section id="home" class="slider">
-            <div class="container">
-                <div class="slider-content">
-                    <div class="slider-content-left">
-                        <div class="slider-content-left-top-container">
-                            <div class="slider-content-left-top">
-                                <a href=""><img src="./12.png" alt=""></a>
-                                <a href=""><img src="./hangthat.png" alt=""></a>
-                                <a href=""><img src="./anhsale1.png" alt=""></a>
-                                <a href=""><img src="./anhvouncher2.png" alt=""></a>
-                                <a href=""><img src="./1k11.png" alt=""></a>
-                            </div>
-                            <div class="slider-content-left-top-btn">
-                                    <i class="fas fa-chevron-left"></i>
-                                    <i class="fas fa-chevron-right"></i>
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="slider-content-left-bottom" >
-                            <li class="active"style="font-family:sans serif;color:rgb(60, 116, 4);background-color:cornsilk;" >Uy tín-Chất lượng</li>
-                            <li style="font-family:sans serif;color:rgb(60, 116, 4);background-color:cornsilk;">Cam kết hàng thật</li>
-                            <li style="font-family:sans serif;color:rgb(60, 116, 4);background-color:cornsilk;">Sales siêu hot</li>
-                            <li style="font-family:sans serif;color:rgb(60, 116, 4);background-color:cornsilk;">Mua cây tặng vouncher</li>
-                            <li style="font-family:sans serif;color:rgb(60, 116, 4);background-color:cornsilk;"><a href="#giamgia" style="font-family:sans serif;color:rgb(60, 116, 4);background-color:cornsilk;">Cây cảnh dale hời</a></li>
-                        </div>
-                    </div>
-                    <div class="slider-content-right">
-                        <li><a href=""><img src="./caynoithat.png" alt=""></a></li>
-                        <li><a href=""><img src="./cayvanphong.png" alt=""></a></li>
-                        <li><a href=""><img src="./caydeban.png" alt=""></a></li>
-                        <li><a href=""><img src="./caynghethuat.png" alt=""></a></li>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="baner-one">
-            <div class="container">
-                <img src="image/baner1.jpg" alt="">
-            </div>
-        </section>
-          <section id="section" class="product-gallery-one">
-            <div class="section-bg"></div>
-            <div class="section-content">
-                <div id="row-78" class="row">
-                    <div id="col-96" class="col">
-                        <div id="noithat" class="product-gallery-one-content">
-                            <div class="product-gallery-one-content-title">
-                                <h2>CÂY CẢNH NỘI THẤT</h2>
-                            </div>
-                            <div class="product-gallery-one-content-product">
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Cuong/index(sp1).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Cuong/Cuonganh/anh9.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây Thiết Mộc Lan</li>
-                                                <li>450.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Cuong/index(sp2).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Cuong/Cuonganh/anh10.jpeg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây Đại Tứ Lan</li>
-                                                <li>400.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Cuong/index(sp3).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Cuong/Cuonganh/anh11.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây Đại Tướng Quân</li>
-                                                <li>450.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Cuong/index(sp4).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Cuong/Cuonganh/anh12.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây Đuôi Công</li>
-                                                <li>380.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Cuong/index(sp5).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Cuong/Cuonganh/anh13.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây Trúc Nhật</li>
-                                                <li>350.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Cuong/index(sp6).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Cuong/Cuonganh/anh14.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây Vạn Lộc</li>
-                                                <li>350.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Cuong/index(sp7).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Cuong/Cuonganh/anh24.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây cỏ Lan Chi</li>
-                                                <li>300.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Cuong/index(sp8).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Cuong/Cuonganh/anh15.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây Vạn Niên Thanh</li>
-                                                <li>400.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="section" class="product-gallery-one">
-            <div class="section-bg"></div>
-            <div class="section-content">
-                <div id="row-78" class="row">
-                    <div id="col-96" class="col">
-                        <div id="vanphong" class="product-gallery-one-content">
-                            <div class="product-gallery-one-content-title">
-                                <h2>CÂY CẢNH VĂN PHÒNG</h2>
-                            </div>
-                            <div class="product-gallery-one-content-product">
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Cuong/index(sp11).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Cuong/Cuonganh/anh16.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây Trúc bách hợp</li>
-                                                <li>600.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Cuong/index(sp12).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Cuong/Cuonganh/anh17.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây Bạch mã hoàng tử</li>
-                                                <li>400.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Cuong/index(sp13).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Cuong/Cuonganh/anh18.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây Cau Nhật</li>
-                                                <li>300.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Cuong/index(sp14).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Cuong/Cuonganh/anh19.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây Lưỡi mèo</li>
-                                                <li>250.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Cuong/index(sp15).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Cuong/Cuonganh/anh20.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây hoa phong lữ</li>
-                                                <li>250.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Cuong/index(sp16).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Cuong/Cuonganh/anh21.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây Lan Ý</li>
-                                                <li>300.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Cuong/index(sp17).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Cuong/Cuonganh/anh22.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây ngọc bích</li>
-                                                <li>400.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Cuong/index(sp18).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Cuong/Cuonganh/anh23.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây hoa sống đời</li>
-                                                <li>300.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>         
-        <!-- ---------------------------------Product Gallery---------- -->
-        <section id="section" class="product-gallery-one">
-            <div class="section-bg"></div>
-            <div class="section-content">
-                <div id="row-78" class="row">
-                    <div id="col-96" class="col">
-                        <div id="deban" class="product-gallery-one-content">
-                            <div class="product-gallery-one-content-title">
-                                <h2>CÂY CẢNH ĐỂ BÀN</h2>
-                            </div>
-                            <div class="product-gallery-one-content-product">
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Huy/index(sp1).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Huy/anh/anh1.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây phát tài</li>
-                                                <li>300.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Huy/index(sp2).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Huy/anh/anh2.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây phát lộc</li>
-                                                <li>450.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Huy/index(sp4).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Huy/anh/anh3.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây tài lộc</li>
-                                                <li>35.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Huy/index(sp5).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Huy/anh/anh4.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây cỏ may mắn</li>
-                                                <li>150.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Huy/index(sp6).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Huy/anh/anh5.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây kim ngân</li>
-                                                <li>150.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Huy/index(sp7).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Huy/anh/anh6.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây trầu bà lá rách</li>
-                                                <li>300.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Huy/index(sp8).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Huy/anh/anh7.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây swiss cheese plant</li>
-                                                <li>400.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="col-inner">
-                                        <a href="./Huy/index(sp9).html" class="product-gallery-one-content-product-item">
-                                            <img class="thub" src="./Huy/anh/anh8.jpg" alt="">
-                                            <div class="product-gallery-one-content-product-item-text">
-                                                <li>Cây ráy xẻ</li>
-                                                <li>400.000<sup>đ</sup></li>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-            <!-- ---------------------------------Product Gallery two---------- -->
-            <section class="product-gallery-two">
-                <div id="giamgia"  class="product-gallery-one-content-title" > 
-                    <h2>CÂY THỦY CẢNH - CÂY CẢNH NGHỆ THUẬT</h2>
-                </div>
-                <div class="container">
-                    <div class="product-gallery-two-content">
-                        <div class="product-gallery-two-content-right">
-                        <img src="./Luong/trees/poster.png" alt="">
-                        </div>
-                            <div class="product-gallery-two-content-left">
-                              
-                            
-                            <div class="product-gallery-two-content-left-bottom">
-                           
-                                <div class="product-gallery-two-content-left-bottom-item">
-                                    <a href="./Luong/index1.html" >
-                                        <img src="./Luong/trees/cây-dứa-đài-loan-247x296.jpg" style=" width: 140px;" alt="">
-                                        <div class="product-gallery-two-content-left-bottom-item-text">
-                                        <li>New</li>
-                                        <li>Cây dứa Đài Loan thủy canh</li>
-                                        <li>120.000<sup>đ</sup></li>
-                                        </div>
-                                    </a>
-                                </div> 
-                                      
-                                    
-                                    
-                                
-                                <div class="product-gallery-two-content-left-bottom-item">
-                                    <a href="./Luong/index2.html">
-                                    <img src="./Luong/trees/cay_gua_nghe_thuat_hinh_binh_hoa-247x296.jpg" style="width: 140px;"><div class="product-gallery-two-content-left-bottom-item-text">
-                                        <li>Sale 15%</li>
-                                        <li>Cây gừa NT hình bình hoa</li>
-                                        <li>250.000<sup>đ</sup></li>
-                                    </div></a>
-                                    
-                                </div>
-                                <div class="product-gallery-two-content-left-bottom-item">
-                                    <a href="./Luong/index3.html">
-                                        <img src="./Luong/trees/cây-hồng-môn-247x296.jpg" style="width: 140px;"> <div class="product-gallery-two-content-left-bottom-item-text">
-                                        <li>Hot</li>
-                                        <li>Cây hồng môn thủy canh</li>
-                                        <li>150.000<sup>đ</sup></li>
-                                        
-                                    </div></a>
-                                   
-                                </div>
-                                <div class="product-gallery-two-content-left-bottom-item">
-                                    <a href="./Luong/index4.html">
-                                        <img src="./Luong/trees/cay_gua_nghe_thuat_hinh_thien_nga-247x296.jpg" style="width: 140px;"><div class="product-gallery-two-content-left-bottom-item-text">
-                                        <li>Bestseller</li>
-                                        <li>Cây gừa NT hình thiên nga</li>
-                                        <li>170.000<sup>đ</sup></li>
-                                    </div></a>
-                                    
-                                </div>
-                                <div class="product-gallery-two-content-left-bottom-item">
-                                    <a href="./Luong/index5.html">
-                                        <img src="./Luong/trees/cây-lan-chi-247x296.jpg" style="width: 140px;"><div class="product-gallery-two-content-left-bottom-item-text">
-                                        <li>New</li>
-                                        <li>Cây Lan chi thủy canh</li>
-                                        <li>320.000<sup>đ</sup></li>
-                                    </div></a>
-                                    
-                                </div>
-                                <div class="product-gallery-two-content-left-bottom-item">
-                                    <a href="./Luong/index6.html">
-                                        <img src="./Luong/trees/cây-ngọc-trai-247x296.jpg" style="width: 140px;"><div class="product-gallery-two-content-left-bottom-item-text">
-                                        <li>Hot</li>
-                                        <li>Cây ngọc trai thủy canh</li>
-                                        <li>400.000<sup>đ</sup></li>
-                                    </div></a>
-                                    
-                                </div>
-                                <div class="product-gallery-two-content-left-bottom-item">
-                                    <a href="./Luong/index7.html">
-                                        <img src="./Luong/trees/cay_gua_nghe_thuat_hinh_traitim-247x296.jpg" style="width: 140px;"><div class="product-gallery-two-content-left-bottom-item-text">
-                                        <li>Đặt trước 30/04</li>
-                                        <li>Cây gừa NT hình trái tim</li>
-                                        <li>140.000<sup>đ</sup></li>
-                                        
-                                       
-                                    </div></a>
-                                    
-                                </div>
-                                <div class="product-gallery-two-content-left-bottom-item">
-                                    <a href="./Luong/index8.html">
-                                        <img src="./Luong/trees/cây-ngân-hậu-247x296.jpg" style="width: 140px;"><div class="product-gallery-two-content-left-bottom-item-text">
-                                        <li>Sale 15%</li>
-                                        <li>Cây ngân hậu thủy canh</li>
-                                        <li>100.000<sup>đ</sup></li>
-                                        
-                                    </div></a>
-                                    
-                                </div><div class="product-gallery-two-content-left-bottom-item">
-                                    <a href="./Luong/index9.html">
-                                        <img src="./Luong/trees/cây-phú-quý-247x296.jpg" style="width: 140px;"><div class="product-gallery-two-content-left-bottom-item-text">
-                                        <li>Mua 2 tặng 1</li>
-                                        <li>Cây phú quý thủy canh</li>
-                                        <li>300.000<sup>đ</sup></li>
-                                       
-                                    </div></a>
-                                    
-                                </div>
-                                <div class="product-gallery-two-content-left-bottom-item">
-                                    <a href="./Luong/index10.html">
-                                        <img src="./Luong/trees/cây-đế-vương-247x296.jpg" style="width: 140px;"><div class="product-gallery-two-content-left-bottom-item-text">
-                                        <li>Mua 2 tặng 1</li>
-                                        <li>Cây đế vương thủy canh</li>
-                                        <li>120.000<sup>đ</sup></li>
-                                       
-                                    </div></a>
-                                    
-                                </div>
-                                
-        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section >
-                <div class="cuocsongxanh"> 
-                    <h3 class="cuocsongxanh2">Có nhu cầu mua cây – Chọn ngay cây cảnh , lựa ngay của shop chúng tôi</h3>
-                        <ul type="cirlce" class="abc" style="padding-left:20px;">
-                                <li>
-                                Cây cảnh với màu xanh mát tự nhiên sẽ mang lại cảm giác thanh mát, tươi mới giúp giảm nhiệt, giảm sự ngột ngạt cho văn phòng và đặc biệt là giúp tạo nên độ ẩm phù 
-                                </li>
-                                <p>
-                                hợp cho không gian. 
-                                </p>
-                                <li>
-                                    Có những loại cây cảnh có tác dụng giảm phiền do tiếng ồn trong văn phòng giúp cho nhân viên tập trung làm việc hiệu quả hơn.
-                                </li>
-                        </ul>
-                        
-                    <h3>Cây cảnh là gì</h3>
-                        <ul type="circle-black" class="abc" style="padding-left:20px;">
-                            <li>
-                                Cây cảnh (hoặc cây kiểng) là một số loại thực vật được chăm sóc, gieo trồng và tạo dáng công phu, thường dùng làm vật trang trí hay một chi tiết trong thuật phong thủy.
-                            </li>
-                            <li>
-                                Cây cảnh được bài trí có khi nhằm thể hiện một ý tưởng của người trồng qua cách xếp đặt mà vẫn giữ được vẻ tự nhiên của lá. Thân cây được uốn theo một hình dáng 
-                            </li>
-                            <p>
-                                nào đó, còn gọi là thế, kết hợp với chậu, đất hay nước là môi trường dinh dưỡng cho thực vật ấy.
-                            </p>
-                            <li>   
-                                Bên cạnh mục tiêu làm cảnh (vì lẽ này cây cảnh đã được tuyên lên thành nghệ thuật như ở Nhật Bản có bon-sai) cây cảnh còn là một loại hàng hóa được kinh doanh 
-                            </li>
-                            <p>
-                                không theo một khung giá cố định nào mà phần nhiều tùy hứng của người bán và người mua hoặc tùy tâm của người bán.
-                            </p>
-                        </ul>
-                        
+               
                 
-                    <h3>Lợi ích của cây nội thất là gì?</h3>
-                        <ul tyle="circle" class="abc" style="padding-left:20px;">
-                            <li>
-                                Hiệu suất công việc của nhân viên sẽ tăng đến 15%
-                            </li>
-                            <li>
-                                Phát huy khả năng sáng tạo.
-                            </li>    
-                            <li>
-                                Giảm nghỉ bệnh và vắng mặt.
-                            </li> 
-                            <li>
-                                Bảo vệ nội thất và mang lại không khí trong lành.
-                            </li>  
-                            <li> 
-                                Cây xanh nội thất giúp làm giảm tiếng ồn văn phòng.
-                            </li>
-                        </ul>
-                        
-            
-                    <h3>Lợi ích của cây văn phòng là gì?</h3>
-                        <ul tyle="circle" class="abc" style="padding-left:20px;">
-                            <li>
-                                Thanh lọc và tăng chất lượng không khí trong văn phòng.
-                            </li> 
-                            <li>
-                                Tạo lên không gian làm việc xanh – phong cách Eco trong thiết kế văn phòng.
-                            </li>
-                            <li>
-                                Tăng tính thẩm mỹ cho không gian làm việc.
-                            </li>
-                            <li>
-                                Giúp thư giãn tinh thần giảm căng thẳng mệt mỏi.
-                            </li>
-                        </ul>
-                    <h3>Lợi ích của cây để bàn là gì?</h3>
-                        <ul tyle="circle" class="abc" style="padding-left:20px;">
-                            <li>
-                                Cây để bàn tạo không gian xanh và thanh lọc không khí
-                            </li>
-                            <li>
-                                Cây xanh để bàn cũng có thể hấp thụ các khí CO2, phân tử kim loại nặng và giữ chúng bên trong thân. Nhả ra khí O2 bổ sung độ ẩm tạo môi trường trong lành, thân 
-                            </li>
-                            <p>
-                                thiện. Bạn sẽ luôn cảm thấy thoải mái và dễ chịu trong suốt 8 giờ làm việc căng thẳng.
-                            </p>
-                        </ul>
-                    <h3>Lợi ích của cây cảnh thủy canh là gì ?</h3>
-                        <ul tyle="circle" class="abc" style="padding-left:20px;">
-                            <li>
-                                Rau thủy canh có ưu điểm lớn nhất đó là "sạch", do rau được trồng trong môi trường nước nên không tiếp xúc với đất cát, ít bị ảnh hưởng bởi các yếu tố môi trường 
-                            </li>
-                            <p>
-                                bên ngoài. Từ đó giúp rau sạch hơn, không mất quá nhiều thời gian ngâm rửa trước khi sử dụng hay thậm chí có thể ăn ngay sau khi thu hoạch.
-                            </p>    
-                            <li>
-                                Rau thủy canh được đánh giá là loại rau tốt cho sức khỏe con người hơn các loại rau được canh tác theo phương pháp truyền thống. 
-                            </li>
-                        </ul>
-                    <h3>Lợi ích của cây nghệ thuật là gì ?</h3>
-                        <ul tyle="circle" class="abc" style="padding-left:20px;">
-                            <li>Tạo không gian sống thú vị.</li>
-                            <li>Cải thiện chất lượng không khí.</li>
-                            <li>Tạo cảm giác thư giãn.</li>
-                            <li>Tăng sự sáng tạo.</li>
-                            <li>Giảm tiếng ồn.</li>
-                            <li>Tăng khả năng tập trung và hiệu suất làm việc.</li>
-                        </ul>
-                </div>
-                <div class="border1"></div>
-                <footer class="footer">
-                    <div class="grid">
-                        <div class="grid_row">
-                            <div class="grid_column-2-4" >
-                                <h3 class="footer_heading">Chăm sóc khách hàng</h3>
-                                <ul class="footer_list">
-                                    <li class="footer-item" style="padding-left:30px;" >
-                                        <a href="./index(sp21).html" class="footer-item_link">Trung Tâm Trợ Giúp</a>
-                                    </li>
-                                        
-                                    <li class="footer-item" style="padding-left:30px;">
-                                        <a href="./index(sp21).html" class="footer-item_link">Hướng dẫn mua hàng</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="grid_column-2-4">
-                                <h3 class="footer_heading">Giới thiệu</h3>
-                                <ul class="footer_list">
-                                    <li class="footer-item" >
-                                        <a href="./index(sp21).html" class="footer-item_link">Thời gian làm việc</a>
-                                    </li>
-                                    <li class="footer-item" style="padding-left:14px;"> 
-                                        <a href="./index(sp21).html" class="footer-item_link">Tuyển dụng</a>
-                                     </li>
-                                     <li class="footer-item" style="padding-left:15px;">
-                                        <a href="./index(sp21).html" class="footer-item_link">Điều khoản</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="grid_column-2-4">
-                                <h3 class="footer_heading">Danh mục</h3>
-                                <ul class="footer_list">
-                                    <li class="footer-item">
-                                        <a href="#noithat" class="footer-item_link">Cây cảnh nội thất</a>
-                                    </li>
-                                    <li class="footer-item"> 
-                                        <a href="#vanphong" class="footer-item_link">Cây cảnh văn phòng</a>
-                                     </li>
-                                     <li class="footer-item">
-                                        <a href="#deban" class="footer-item_link">Cây cảnh để bàn</a>
-                                    </li>
-                                    <li class="footer-item">
-                                        <a href="#giamgia" class="footer-item_link">Cây cảnh thủy canh</a>
-                                    </li>
-                                    <li class="footer-item">
-                                        <a href="#giamgia" class="footer-item_link">Cây nghệ thuật</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="grid_column-2-4">
-                                <h3 class="footer_heading">Theo dõi</h3>
-                                <ul class="footer_list">
-                                    <li class="footer-item">
-                                        <a href="" class="footer-item_link">
-                                            <i class="footer-item_icon fab fa-facebook"></i>Facebook</a>
-                                    </li>
-                                    <li class="footer-item">
-                                        <a href="" class="footer-item_link">
-                                            <i class="footer-item_icon fab fa-instagram"></i>Instagram</a>
-                                    </li>        
-                                    <li class="footer-item">
-                                        <a href="https://www.linkedin.com/" class="footer-item_link">
-                                            <i class="footer-item_icon fab fa-linkedin"></i>Linkedin</a>
-                                    </li>
-                            </div>
-                            <div class="grid_column-2-4">
-                                <h3 class="footer_heading">Vào cửa hàng trên ứng dụng</h3>
-                                <div class="footer_download">
-                                    <img src="./web bancay1_qrcode.png" alt="Download QR" class="footer_download-qr" style="width:80px;">
-                                    <div class="footer_download-apps">
-                                        <a href="https://play.google.com/store/games?device=windows&utm_source=apac_med&hl=vi-VN&utm_medium=hasem&utm_content=Jan0324&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-vn-1707570-med-hasem-py-Evergreen-Jan0324-Text_Search_BKWS-BKWS%7CONSEM_kwid_43700064211720896_creativeid_525822890336_device_c&gad_source=1&gclid=EAIaIQobChMIzezsuejVhQMVG1wPAh1M0g1lEAAYASAAEgK6TPD_BwE&gclsrc=aw.ds" class="footer_download-app-link">
-                                            <img src="./googleplay.png" alt="Google play" class="footer_download-app-img" style="width:90px;">
-                                        </a>
-                                        <a href="https://www.apple.com/vn/app-store/" class="footer_download-app-link">
-                                            <img src="./appstore.png" alt="App store" class="footer_download-app-img" style="width:90px;">
-                                        </a>
-                                        
-        
-                                    </div>
-                                </div>
-        
-                            </div>
+              </div>
+            </aside>
+            <!-- / Menu -->
+
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              
+              <div class="app-kanban">
+                <!-- Add new board -->
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card">
+                      <h5 class="card-header">Quản lí đơn hàng</h5>
+                      <div class="table-responsive text-nowrap">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Email</th>
+                              <th>Ngày tạo</th>
+                              <th>Tổng tiền</th>
+                              <th>Trạng thái</th>
+                              <th>Hành Động</th>
+                            </tr>
+                          </thead>
+                          <tbody class="table-border-bottom-0 t_body_order">
                             
-                        </div>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
-                    <div class="footer_bottom">
-                        <div class="grid">
-                            <p class="footer_text">@ 2024 - Bản quyền thuộc về Công ty MyBTL</p>
-                        </div>
+                  </div>
+                </div>
+                <div class="row mt-5">
+                  <div class="col-12">
+                    <div class="card">
+                      <h5 class="card-header">Quản lí tài khoản</h5>
+                      <div class="table-responsive text-nowrap">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Tên</th>
+                              <th>Đia chỉ</th>
+                              <th>Số điện thoại</th>
+                              <th>Email</th>
+                              <th>Trạng thái</th>
+                            </tr>
+                          </thead>
+                          <tbody class="table-border-bottom-0 t_body_account">
+                            
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
-                </footer>
-            </section>
-        </div>
-        <script src="./script.js"></script>
-        </body>
-        </html>  
+                  </div>
+                </div>
+
+              
+              </div>
+            </div>
+            <!--/ Content -->
+
         
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!--/ Content wrapper -->
+        </div>
+
+        <!--/ Layout container -->
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Chi tiết hóa đơn</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-12">
+          <div class="card">
+            <div class="table-responsive text-nowrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Tên sản phẩm</th>
+                    <th>Số lượng</th>
+                    <th>Giá</th>
+                  </tr>
+                </thead>
+                <tbody class="table-border-bottom-0 t_body_order_detail">
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+   
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    
+    <script src="assets/vendor/js/menu.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="src/js/common.js"></script>
+
+  </body>
+
+ 
+</html>
+
+<!-- beautify ignore:end -->
