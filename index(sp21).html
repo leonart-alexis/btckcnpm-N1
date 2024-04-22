@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>plant shop</title>
     <link rel="stylesheet" href="./styles.css" >
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./sidebar.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./sidebar_card.js"></script>
     <script src="https://kit.fontawesome.com/38cd021484.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -12,11 +16,11 @@
         <div class="container">
             <div class="hotline"><i class="fa-solid fa-phone"></i> Hotline: **********</div>
             <div class="add-top">
-                <ul>
-                    <li id="taotaikhoan" style="padding-right: 10px;"><a href="#">TẠO TÀI KHOẢN</a></li>
+                  <ul>
+                    <li id="taotaikhoan" style="padding-right: 10px;"><a href="./dang-ky.html">TẠO TÀI KHOẢN</a></li>
                     <li class="dndk"></li>
-                    <li id="dangnhap" style="padding-left: 10px;"><a href="#">ĐĂNG NHẬP</a></li>
-                    <li style="padding-left: 10px;"><a href=""><button><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</button></a></li>
+                    <li id="dangnhap" style="padding-left: 10px;"><a href="./dang-nhap.html">ĐĂNG NHẬP</a></li>
+                    <li style="padding-left: 10px;"><button type="button" class="cart-shopping"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</button></li>
                 </ul>
                 <div class="taotaikhoan">
                     <div class="taotaikhoan-content">
@@ -46,18 +50,6 @@
         <div class="container">
             <ul>
                 <li class="logo"><a href=""><img style="width: 150px" src="./Ảnh chụp màn hình 2024-04-06 143410.png" alt=""></a></li>
-                <li class="search">
-                    <input class="search-input" type="text" placeholder="Bạn tìm gì..." > 
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <div class="search-list">
-                        <ul class="search-list-item">
-                            <a href="#noithat"><li class="list-item">Cây cảnh nội thất</li></a>
-                            <a href="#vanphong"><li class="list-item">Cây cảnh văn phòng</li></a>
-                            <a href="#deban"><li class="list-item">Cây cảnh để bàn</li></a>
-                            <a href="#giamgia"><li class="list-item">Giảm giá chào hè</li></a>
-                        </ul>
-                    </div>
-                </li>
             </ul>
         </div>
     </nav>
@@ -66,9 +58,11 @@
             <div class="menu-bar-content">
                 <ul>
                     <a href="./index.html"><li><i class="fa-solid fa-house"></i>Trang chủ</li></a>
-                    <a href="./Huy/index(sp4).html"><li>Bán chạy nhất</li></a>
-                    <a href="./Luong/index3.html"><li>Mới nhất</li></a>
-                    <a href="./index(sp21).html"><li>Tham khảo thông tin cây</li></a>
+                    <a href="./Huy/index(sp4).html"><li>Cây cảnh nội thất</li></a>
+                    <a href="./Luong/index3.html"><li>Cây cảnh văn phòng</li></a>
+                    <a href="./index(sp21).html"><li>Cây cảnh để bàn</li></a>
+                    <a href="./index(sp21).html"><li>Cây thủy cảnh</li></a>
+                    <a href="./index(sp21).html"><li>Cây cảnh nghệ thuật</li></a>
                 </ul>
             </div>
         </div>
@@ -78,7 +72,13 @@
 <div class="main">   
     <section >
         <div class="cuocsongxanh"> 
-            <h3 class="cuocsongxanh2">Có nhu cầu mua cây – Chọn ngay cây cảnh , lựa ngay của shop chúng tôi</h3>
+            <h3 id="Huongdanmuahang">Hướng dẫn mua hàng :</h3>
+                <ul type="cirlce" class="abc" style="padding-left:20px;">
+                        <li>
+                        Các bạn chỉ cần click vào đặt hàng . Chúng tôi sẽ giao đơn hàng đến cho bạn một cách nhanh nhất !!!
+                        </li>
+                </ul>
+            <h3 class="cuocsongxanh2">Có nhu cầu mua cây – Chọn ngay cây cảnh , lựa ngay của shop chúng tôi :</h3>
                 <ul type="cirlce" class="abc" style="padding-left:20px;">
                         <li>
                         Cây cảnh với màu xanh mát tự nhiên sẽ mang lại cảm giác thanh mát, tươi mới giúp giảm nhiệt, giảm sự ngột ngạt cho văn phòng và đặc biệt là giúp tạo nên độ ẩm phù 
@@ -91,7 +91,7 @@
                         </li>
                 </ul>
                 
-            <h3>Cây cảnh là gì</h3>
+            <h3>Cây cảnh là gì ?</h3>
                 <ul type="circle-black" class="abc" style="padding-left:20px;">
                     <li>
                         Cây cảnh (hoặc cây kiểng) là một số loại thực vật được chăm sóc, gieo trồng và tạo dáng công phu, thường dùng làm vật trang trí hay một chi tiết trong thuật phong thủy.
@@ -179,6 +179,26 @@
                     <li>Giảm tiếng ồn.</li>
                     <li>Tăng khả năng tập trung và hiệu suất làm việc.</li>
                 </ul>
+            <h3 id="Thoigianlamviec">Thời gian làm việc :</h3>
+            <ul tyle="circle" class="abc" style="padding-left:20px;">
+                
+                <li>24/24 Chúng tôi luôn sẵn lòng phục vụ vì bạn.</li>
+            </ul>
+            <h3 id="Dieukhoan">Điều khoản :</h3>
+            <ul tyle="circle" class="abc" style="padding-left:20px;">
+                
+                <li>Các điều khoản đều nằm trong phụ lục của điều khoản shop bán cây chung.</li>
+            </ul>
+            <h3 id="Tuyendung">Tuyển dụng :</h3>
+            <ul tyle="circle" class="abc" style="padding-left:20px;">
+                <li>Tuyển dụng các bạn nữ năng động,hoạt bát.</li>
+                <li>Có hiệu lực tuyển dụng đến hết ngày 30/4.</li>
+            </ul>
+            <h3 id="Trungtamtrogiup">Nếu bạn gặp khó khăn hãy nhắn tin cho chúng tôi qua số zalo :</h3>
+            <ul tyle="circle" class="abc" style="padding-left:20px;">
+                <li>Đường dây nóng : 0346623985</li>
+                
+            </ul>
         </div>
         <div class="border1"></div>
         <footer class="footer">
@@ -188,14 +208,14 @@
                         <h3 class="footer_heading">Chăm sóc khách hàng</h3>
                         <ul class="footer_list">
                             <li class="footer-item" style="padding-left:30px;" >
-                                <a href="" class="footer-item_link">Trung Tâm Trợ Giúp</a>
+                                <a href="#Trungtamtrogiup" class="footer-item_link">Trung Tâm Trợ Giúp</a>
                             </li>
                             <li class="footer-item" style="padding-left:30px;" >
                                 <a href="" class="footer-item_link">F8-Shop Mall</a>
                             </li>
                                 
                             <li class="footer-item" style="padding-left:30px;">
-                                <a href="" class="footer-item_link">Hướng dẫn mua hàng</a>
+                                <a href="#Huongdanmuahang" class="footer-item_link">Hướng dẫn mua hàng</a>
                             </li>
                         </ul>
                     </div>
@@ -203,13 +223,13 @@
                         <h3 class="footer_heading">Giới thiệu</h3>
                         <ul class="footer_list">
                             <li class="footer-item" >
-                                <a href="" class="footer-item_link">Thời gian làm việc</a>
+                                <a href="#Thoigianlamviec" class="footer-item_link">Thời gian làm việc</a>
                             </li>
                             <li class="footer-item" style="padding-left:14px;"> 
-                                <a href="" class="footer-item_link">Tuyển dụng</a>
+                                <a href="#Tuyendung" class="footer-item_link">Tuyển dụng</a>
                              </li>
                              <li class="footer-item" style="padding-left:15px;">
-                                <a href="" class="footer-item_link">Điều khoản</a>
+                                <a href="#Dieukhoan" class="footer-item_link">Điều khoản</a>
                             </li>
                         </ul>
                     </div>
@@ -254,14 +274,12 @@
                         <div class="footer_download">
                             <img src="./web bancay1_qrcode.png" alt="Download QR" class="footer_download-qr" style="width:80px;">
                             <div class="footer_download-apps">
-                                <a href="" class="footer_download-app-link">
+                                <a href="https://play.google.com/store/games?device=windows&utm_source=apac_med&hl=vi-VN&utm_medium=hasem&utm_content=Jan0324&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-vn-1707570-med-hasem-py-Evergreen-Jan0324-Text_Search_BKWS-BKWS%7CONSEM_kwid_43700064211720896_creativeid_525822890336_device_c&gad_source=1&gclid=EAIaIQobChMI9MTsqd3VhQMVvMxMAh3L9wp_EAAYASAAEgKy4PD_BwE&gclsrc=aw.ds" class="footer_download-app-link">
                                     <img src="./googleplay.png" alt="Google play" class="footer_download-app-img" style="width:90px;">
                                 </a>
-                                <a href="" class="footer_download-app-link">
+                                <a href="https://www.apple.com/vn/app-store/" class="footer_download-app-link">
                                     <img src="./appstore.png" alt="App store" class="footer_download-app-img" style="width:90px;">
                                 </a>
-                                
-
                             </div>
                         </div>
 
