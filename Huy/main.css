@@ -14,10 +14,6 @@ a{
     max-width: 1200px;
     margin: auto;
 }
-body{
-    width: 100%;
-    position: fixed;
-}
 .main{
     height: 71vh;
     overflow-y: scroll;
